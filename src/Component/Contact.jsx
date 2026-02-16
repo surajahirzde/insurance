@@ -40,10 +40,10 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 2000));
-    
+
     setIsSubmitting(false);
     alert('Thank you for your message! We will get back to you soon.');
     setFormData({ name: '', email: '', phone: '', message: '' });
@@ -166,8 +166,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   className={`ct-submit-btn ${isSubmitting ? 'ct-submitting' : ''}`}
                   disabled={isSubmitting}
                 >
@@ -190,7 +190,7 @@ const Contact = () => {
             <div className="ct-info-wrapper">
               <div className="ct-info-card">
                 <div className="ct-card-glow"></div>
-                
+
                 {/* Address Section */}
                 <div className="ct-info-section">
                   <div className="ct-info-icon">📍</div>
@@ -221,7 +221,7 @@ const Contact = () => {
                       </a>
                       <a href="tel:01244996280" className="ct-phone-link">
                         <span className="ct-phone-icon">📱</span>
-                     9211336185
+                        9211336185
                       </a>
                     </div>
                   </div>
@@ -311,14 +311,32 @@ const Contact = () => {
 
             <div className="ct-links-card">
               <h3>Useful Links</h3>
-       <div className="ct-useful-links">
-  <Link to="/about" className="ct-useful-link">About Us</Link>
-  <Link to="/contact" className="ct-useful-link">Contact Us</Link>
-  <Link to="/services" className="ct-useful-link">Our Services</Link>
-  <Link to="/terms-and-conditions" className="ct-useful-link">Terms & Conditions</Link>
-  <Link to="/privacy-policy" className="ct-useful-link">Privacy Policy</Link>
-  <Link to="/refund-policy" className="ct-useful-link">Refund Policy</Link>
-</div>
+              <div className="ct-useful-links">
+                <Link to="/about" onClick={() =>
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                } className="ct-useful-link">About Us</Link>
+
+
+                <Link to="/contact" onClick={() =>
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                } className="ct-useful-link">Contact Us</Link>
+
+                <Link to="/services" onClick={() =>
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                } className="ct-useful-link">Our Services</Link>
+
+                <Link to="/terms-and-conditions" onClick={() =>
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                } className="ct-useful-link">Terms & Conditions</Link>
+
+                <Link to="/privacy-policy" onClick={() =>
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                } className="ct-useful-link">Privacy Policy</Link>
+                
+                <Link to="/refund-policy" onClick={() =>
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                } className="ct-useful-link">Refund Policy</Link>
+              </div>
 
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -67,12 +68,41 @@ const Footer = () => {
           {/* Legal Links */}
           <div className="footer-section">
             <h4>Legal</h4>
-            <ul className="footer-links">
-              <li><a href="/privacy-policy">Privacy Policy</a></li>
-              <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
-   
-              <li><a href="/refund-policy">Refund Policy</a></li>
-            </ul>
+         <ul className="footer-links">
+  <li>
+    <Link
+      to="/privacy-policy"
+      onClick={() =>
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      }
+    >
+      Privacy Policy
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      to="/terms-and-conditions"
+      onClick={() =>
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      }
+    >
+      Terms and Conditions
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      to="/refund-policy"
+      onClick={() =>
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      }
+    >
+      Refund Policy
+    </Link>
+  </li>
+</ul>
+
           </div>
         </div>
 

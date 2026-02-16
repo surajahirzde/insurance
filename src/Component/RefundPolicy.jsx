@@ -19,7 +19,7 @@ const RefundPolicy = () => {
       <section className="rp-hero-section">
         <div className="rp-container">
           <div className="rp-hero-content">
-            <h1 className="rp-hero-title">
+            <h1 className="rp-title-line">
               <span className="rp-title-line">Refund Policy</span>
             </h1>
             <p className="rp-hero-subtitle">

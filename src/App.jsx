@@ -25,9 +25,7 @@ const routes = createBrowserRouter(createRoutesFromElements(
 
   <Route path="refund-policy" element={<RefundPolicy />} />
   <Route path="privacy-policy" element={<PrivacyPolicy />} />
-  <Route path="terms-and-conditions" onClick={() =>
-                  window.scrollTo({ top: 0, behavior: "smooth" })
-                } element={<TermsAndConditions />} />
+  <Route path="terms-and-conditions"  element={<TermsAndConditions />} />
   </Route>
 ))
 

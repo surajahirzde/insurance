@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Contact.css';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -310,15 +311,15 @@ const Contact = () => {
 
             <div className="ct-links-card">
               <h3>Useful Links</h3>
-              <div className="ct-useful-links">
-                <a href="/about" className="ct-useful-link">About us</a>
-                <a href="/contact" className="ct-useful-link">Contact Us</a>
-              
-                <a href="/services" className="ct-useful-link">Our Services</a>
-                <a href="/terms-and-conditions" className="ct-useful-link">Terms & Conditions</a>
-                <a href="/privacy-policy" className="ct-useful-link">Privacy policy</a>
-                <a href="/refund-policy" className="ct-useful-link">Refund Policy</a>
-              </div>
+       <div className="ct-useful-links">
+  <Link to="/about" className="ct-useful-link">About Us</Link>
+  <Link to="/contact" className="ct-useful-link">Contact Us</Link>
+  <Link to="/services" className="ct-useful-link">Our Services</Link>
+  <Link to="/terms-and-conditions" className="ct-useful-link">Terms & Conditions</Link>
+  <Link to="/privacy-policy" className="ct-useful-link">Privacy Policy</Link>
+  <Link to="/refund-policy" className="ct-useful-link">Refund Policy</Link>
+</div>
+
             </div>
           </div>
         </div>

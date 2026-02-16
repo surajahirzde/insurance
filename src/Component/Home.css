@@ -107,6 +107,7 @@ body {
   transform: translate(-50%, -50%);
   animation-delay: 2s;
 }
+   
 
 .floating-particle {
   position: absolute;

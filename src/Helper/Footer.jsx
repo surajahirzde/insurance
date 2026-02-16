@@ -55,10 +55,7 @@ const Footer = () => {
           {/* Services Links */}
           <div className="footer-section">
             <h4>Services</h4>
-            <ul className="footer-links">
-              <li><a href="/fastag">Fastag Payments</a></li>
-              <li><a href="/tools">Tools</a></li>
-            </ul>
+  
             
             <h4 className="tools-subheading">Tools</h4>
             <ul className="footer-links">
@@ -72,8 +69,8 @@ const Footer = () => {
             <h4>Legal</h4>
             <ul className="footer-links">
               <li><a href="/privacy-policy">Privacy Policy</a></li>
-              <li><a href="/terms">Terms and Conditions</a></li>
-              <li><a href="/cookie-policy">Cookie Policy</a></li>
+              <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+   
               <li><a href="/refund-policy">Refund Policy</a></li>
             </ul>
           </div>

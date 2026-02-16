@@ -9,6 +9,10 @@ const About = lazy(() => import("./Component/About"));
 const Services = lazy(() => import("./Component/Service"));
 const Contact = lazy(() => import("./Component/Contact"));
 
+const RefundPolicy = lazy(() => import("./Component/RefundPolicy"));
+const PrivacyPolicy = lazy(() => import("./Component/PrivacyPolicy"));
+const TermsAndConditions = lazy(() => import("./Component/TermsAndConditions"));
+
 
 const routes = createBrowserRouter(createRoutesFromElements(
   <Route errorElement={<Error />} path="/" element={<RootLayout />}>
@@ -18,6 +22,12 @@ const routes = createBrowserRouter(createRoutesFromElements(
     <Route path="/services" element={<Services />} />
    
     <Route path="/billerlist" element={<BillersSection />} />
+
+  <Route path="refund-policy" element={<RefundPolicy />} />
+  <Route path="privacy-policy" element={<PrivacyPolicy />} />
+  <Route path="terms-and-conditions" onClick={() =>
+                  window.scrollTo({ top: 0, behavior: "smooth" })
+                } element={<TermsAndConditions />} />
   </Route>
 ))
 

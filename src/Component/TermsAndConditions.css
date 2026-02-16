@@ -1,0 +1,565 @@
+/* TermsAndConditions.css - All classes prefixed with 'tc-' */
+
+/* ===== Base Styles ===== */
+.tc-wrapper {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.tc-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Animated Background ===== */
+.tc-bg-animated {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.tc-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(155, 89, 182, 0.05) 0%, rgba(142, 68, 173, 0.05) 100%);
+  animation: tc-float-shape 8s ease-in-out infinite;
+}
+
+.tc-shape-1 {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.tc-shape-2 {
+  width: 150px;
+  height: 150px;
+  top: 60%;
+  right: 8%;
+  animation-delay: 2s;
+}
+
+.tc-shape-3 {
+  width: 100px;
+  height: 100px;
+  bottom: 20%;
+  left: 15%;
+  animation-delay: 4s;
+}
+
+.tc-particle {
+  position: absolute;
+  background: rgba(155, 89, 182, 0.1);
+  border-radius: 50%;
+  animation: tc-float-particle 6s ease-in-out infinite;
+}
+
+.tc-particle-1 { width: 6px; height: 6px; top: 30%; left: 20%; animation-delay: 1s; }
+.tc-particle-2 { width: 8px; height: 8px; top: 70%; right: 25%; animation-delay: 2s; }
+.tc-particle-3 { width: 4px; height: 4px; bottom: 40%; left: 30%; animation-delay: 3s; }
+.tc-particle-4 { width: 10px; height: 10px; top: 50%; right: 15%; animation-delay: 4s; }
+
+@keyframes tc-float-shape {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+  33% { transform: translate(20px, -30px) scale(1.1); opacity: 0.5; }
+  66% { transform: translate(-15px, 20px) scale(0.9); opacity: 0.2; }
+}
+
+@keyframes tc-float-particle {
+  0%, 100% { transform: translate(0, 0); opacity: 0.6; }
+  50% { transform: translate(15px, -25px); opacity: 1; }
+}
+
+/* ===== Hero Section ===== */
+.tc-hero-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0f46a4 0%, #10337a 50%, #10448a 100%);
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.tc-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.tc-hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #fff, #e8daef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: tc-slide-up 1s ease-out;
+}
+
+@keyframes tc-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tc-hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  animation: tc-slide-up 1s ease-out 0.3s both;
+}
+
+.tc-hero-illustration {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  animation: tc-float 3s ease-in-out infinite;
+}
+
+.tc-ill-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  animation: tc-pulse 2s ease-in-out infinite;
+}
+
+.tc-ill-circle-1 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation-delay: 0s;
+}
+
+.tc-ill-circle-2 {
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  animation-delay: 0.5s;
+}
+
+.tc-ill-circle-3 {
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  animation-delay: 1s;
+}
+
+.tc-ill-icon {
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+@keyframes tc-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes tc-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.1); opacity: 0.4; }
+}
+
+/* ===== Main Content Section ===== */
+.tc-main-section {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+.tc-content-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tc-last-updated {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tc-updated-badge {
+  background: linear-gradient(135deg, #0f46a4 0%, #10337a 50%, #10448a 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(155, 89, 182, 0.3);
+}
+
+.tc-content-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.tc-content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.tc-content-card h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.tc-content-card h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+ background: linear-gradient(135deg, #0f46a4 0%, #10337a 50%, #10448a 100%);
+  border-radius: 3px;
+}
+
+.tc-content-card h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.tc-content-card h4 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.tc-content-card p {
+  color: #6c757d;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.tc-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.tc-bullet-list li {
+  color: #6c757d;
+  padding: 8px 0 8px 30px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.tc-bullet-list li::before {
+  content: '📜';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  font-size: 0.9rem;
+}
+
+/* Definition Grid */
+.tc-definition-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tc-definition-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.tc-definition-item:hover {
+  transform: translateX(5px);
+  background: #f3e8ff;
+}
+
+.tc-def-term {
+  font-weight: 700;
+  color: #263986;
+  min-width: 150px;
+}
+
+.tc-def-sep {
+  color: #6c757d;
+  font-weight: 300;
+}
+
+.tc-def-desc {
+  color: #2c3e50;
+  flex: 1;
+}
+
+/* Payment Terms */
+.tc-payment-terms {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.tc-term-item {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.tc-term-item:hover {
+  transform: translateX(5px);
+  background: #f3e8ff;
+}
+
+.tc-term-item h4 {
+  color: #0d0d86;
+  margin-bottom: 10px;
+}
+
+.tc-term-item p {
+  margin: 0;
+}
+
+/* Responsibility Grid */
+.tc-responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tc-responsibility-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.tc-responsibility-item:hover {
+  transform: translateY(-3px);
+  background: #f3e8ff;
+  box-shadow: 0 5px 15px rgba(155, 89, 182, 0.1);
+}
+
+.tc-res-icon {
+  color: #1a2c75;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Dispute Steps */
+.tc-dispute-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tc-dispute-step {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.tc-dispute-step:hover {
+  transform: translateX(5px);
+  background: #f3e8ff;
+}
+
+.tc-step-number {
+  width: 40px;
+  height: 40px;
+ background: linear-gradient(135deg, #0f46a4 0%, #10337a 50%, #10448a 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.tc-step-desc {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Contact Details */
+.tc-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tc-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.tc-contact-item:hover {
+  transform: translateX(5px);
+  background: #f3e8ff;
+}
+
+.tc-contact-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f46a4 0%, #10337a 50%, #10448a 100%);
+  border-radius: 50%;
+  color: white;
+}
+
+.tc-contact-item strong {
+  color: #2c3e50;
+  margin-right: 10px;
+}
+
+.tc-contact-item a {
+  color: #9b59b6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.tc-contact-item a:hover {
+  color: #8e44ad;
+  text-decoration: underline;
+}
+
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .tc-hero-title {
+    font-size: 3rem;
+  }
+  
+  .tc-content-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tc-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .tc-hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .tc-content-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .tc-definition-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .tc-def-term {
+    min-width: auto;
+  }
+  
+  .tc-responsibility-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tc-dispute-step {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .tc-contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .tc-floating-btn .tc-floating-text {
+    display: none;
+  }
+  
+  .tc-floating-btn {
+    padding: 15px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tc-hero-title {
+    font-size: 2rem;
+  }
+  
+  .tc-hero-illustration {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .tc-ill-icon {
+    font-size: 3rem;
+  }
+  
+  .tc-content-card {
+    padding: 25px;
+  }
+  
+  .tc-bullet-list li {
+    padding-left: 25px;
+  }
+}

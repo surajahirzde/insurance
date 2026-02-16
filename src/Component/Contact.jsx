@@ -196,7 +196,7 @@ const Contact = () => {
                   <div className="ct-info-content">
                     <h3>Our Address</h3>
                     <div className="ct-address-details">
-                      <p><strong>CIN:</strong> U74999HR2022PTC100527</p>
+                      <p><strong>CIN:</strong> U74999HR2016PLC066116</p>
                       <p>Chagans Technologies Ltd</p>
                       <p>SCO-4, Dayal Bagh Market,</p>
                       <p>Sector-39, Faridabad - 121009</p>
@@ -216,11 +216,11 @@ const Contact = () => {
                       </a>
                       <a href="tel:01244053323" className="ct-phone-link">
                         <span className="ct-phone-icon">📱</span>
-                        0124-4053323
+                        9211336184
                       </a>
                       <a href="tel:01244996280" className="ct-phone-link">
                         <span className="ct-phone-icon">📱</span>
-                        0124-4996280
+                     9211336185
                       </a>
                     </div>
                   </div>
@@ -311,28 +311,19 @@ const Contact = () => {
             <div className="ct-links-card">
               <h3>Useful Links</h3>
               <div className="ct-useful-links">
-                <a href="#" className="ct-useful-link">About us</a>
-                <a href="#" className="ct-useful-link">Contact Us</a>
-                <a href="#" className="ct-useful-link">Login</a>
-                <a href="#" className="ct-useful-link">Our Services</a>
-                <a href="#" className="ct-useful-link">Terms & Conditions</a>
-                <a href="#" className="ct-useful-link">Privacy policy</a>
-                <a href="#" className="ct-useful-link">Refund Policy</a>
+                <a href="/about" className="ct-useful-link">About us</a>
+                <a href="/contact" className="ct-useful-link">Contact Us</a>
+              
+                <a href="/services" className="ct-useful-link">Our Services</a>
+                <a href="/terms-and-conditions" className="ct-useful-link">Terms & Conditions</a>
+                <a href="/privacy-policy" className="ct-useful-link">Privacy policy</a>
+                <a href="/refund-policy" className="ct-useful-link">Refund Policy</a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="ct-footer">
-        <div className="ct-container">
-          <div className="ct-footer-content">
-            <p>© Copyright Chagans Technologies Ltd. All Rights Reserved</p>
-            <p>Designed by Chagans Technologies Ltd</p>
-          </div>
-        </div>
-      </footer>
 
       {/* Floating Contact Button */}
       <div className="ct-floating-btn-wrapper">

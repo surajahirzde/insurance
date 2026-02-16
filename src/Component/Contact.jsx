@@ -69,16 +69,7 @@ const Contact = () => {
         <div className="floating-particle part-4"></div>
       </div>
 
-      {/* Breadcrumb */}
-      <div className="breadcrumb-contact">
-        <div className="container">
-          <div className="breadcrumb-nav">
-            <span className="breadcrumb-item">Home</span>
-            <span className="breadcrumb-separator">/</span>
-            <span className="breadcrumb-item active">Contact Us</span>
-          </div>
-        </div>
-      </div>
+ 
 
       {/* Hero Section */}
       <section className="contact-hero">
@@ -309,10 +300,10 @@ const Contact = () => {
               <div className="corporate-details">
                 <p><strong>CIN:</strong> U74999HR2022PTC100527</p>
                 <p><strong>Company:</strong> Chagans Technologies Limited</p>
-                <p>Unit#250-251, FIRST FLOOR</p>
-                <p>TOWER-B, ANSAL CORPORATE PLAZA</p>
-                <p>BLOCK -C2, PALAM VIHAR, GURUGRAM</p>
-                <p>HARYANA - 122017</p>
+                <p>Sco-4 , First Floor</p>
+                <p>Dayal Bagh Market, Sector-39</p>
+                <p>Faridabad-121009, HR</p>
+               
               </div>
             </div>
 

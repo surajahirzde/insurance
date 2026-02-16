@@ -45,11 +45,7 @@ const Service = () => {
 
   return (
     <div className="services-container">
-      {/* Breadcrumb */}
-      <div className="breadcrumb">
-        <span>Home</span> / <span>Services</span>
-      </div>
-
+  
       {/* Hero Section */}
       <section className="services-hero">
         <div className="hero-background">

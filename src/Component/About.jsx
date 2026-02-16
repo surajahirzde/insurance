@@ -64,16 +64,7 @@ const About = () => {
         <div className="floating-square square-2"></div>
       </div>
 
-      {/* Breadcrumb with Animation */}
-      <div className="breadcrumb-enhanced">
-        <div className="container">
-          <div className="breadcrumb-nav">
-            <span className="breadcrumb-item">Home</span>
-            <span className="breadcrumb-separator">/</span>
-            <span className="breadcrumb-item active">About Us</span>
-          </div>
-        </div>
-      </div>
+   
 
       {/* Hero Section */}
       <section className="about-hero-enhanced">
@@ -286,17 +277,15 @@ const About = () => {
                   <strong>Company:</strong> Chagans Technologies Limited
                 </div>
                 <div className="info-item">
-                  Unit#250-251, FIRST FLOOR
+                Sc0-4 , FIrst Floor 
                 </div>
                 <div className="info-item">
-                  TOWER-B, ANSAL CORPORATE PLAZA
+                  Dayal Bagh Market, Sector-39
                 </div>
                 <div className="info-item">
-                  BLOCK -C2, PALAM VIHAR, GURUGRAM
+                  Faridabad-121009 , HR
                 </div>
-                <div className="info-item">
-                  HARYANA - 122017
-                </div>
+               
               </div>
               <div className="contact-actions">
                 <button className="contact-btn">

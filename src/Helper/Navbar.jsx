@@ -3,7 +3,12 @@ import { Link, useLocation } from "react-router-dom"
 import { 
   MenuOutlined, 
   CloseOutlined,
-  UserOutlined 
+  UserOutlined,
+  HomeOutlined,
+  InfoCircleOutlined,
+  AppstoreOutlined,
+  PhoneOutlined,
+  LogoutOutlined
 } from "@ant-design/icons"
 import "./style/Navbar.css"
 
@@ -29,7 +34,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className="nav-logo">
                     <Link to="/" onClick={closeMenu}>
-                        <span> <img src="/chagans.jpeg" alt="" /> </span>
+                        <img src="/chagans.jpeg" alt="Logo" className="logo-img" />
                     </Link>
                 </div>
 
@@ -41,7 +46,8 @@ const Navbar = () => {
                             className={`nav-link ${isActiveLink('/') ? 'nav-link-active' : ''}`}
                             onClick={closeMenu}
                         >
-                            Home
+                            <HomeOutlined className="nav-icon" />
+                            <span>Home</span>
                         </Link>
                     </li>
                     <li className="nav-item">
@@ -50,7 +56,8 @@ const Navbar = () => {
                             className={`nav-link ${isActiveLink('/about') ? 'nav-link-active' : ''}`}
                             onClick={closeMenu}
                         >
-                            About Us
+                            <InfoCircleOutlined className="nav-icon" />
+                            <span>About Us</span>
                         </Link>
                     </li>
                     <li className="nav-item">
@@ -59,7 +66,8 @@ const Navbar = () => {
                             className={`nav-link ${isActiveLink('/services') ? 'nav-link-active' : ''}`}
                             onClick={closeMenu}
                         >
-                            Services
+                            <AppstoreOutlined className="nav-icon" />
+                            <span>Services</span>
                         </Link>
                     </li>
                     <li className="nav-item">
@@ -68,7 +76,8 @@ const Navbar = () => {
                             className={`nav-link ${isActiveLink('/contact') ? 'nav-link-active' : ''}`}
                             onClick={closeMenu}
                         >
-                            Contact Us
+                            <PhoneOutlined className="nav-icon" />
+                            <span>Contact Us</span>
                         </Link>
                     </li>
                     <li className="nav-item nav-login">
@@ -78,7 +87,7 @@ const Navbar = () => {
                             onClick={closeMenu}
                         >
                             <UserOutlined className="login-icon" />
-                            Login
+                            <span>Login</span>
                         </Link>
                     </li>
                 </ul>

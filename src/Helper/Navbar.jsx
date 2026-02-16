@@ -80,16 +80,7 @@ const Navbar = () => {
                             <span>Contact Us</span>
                         </Link>
                     </li>
-                    <li className="nav-item nav-login">
-                        <Link 
-                            to="/login" 
-                            className="nav-login-btn"
-                            onClick={closeMenu}
-                        >
-                            <UserOutlined className="login-icon" />
-                            <span>Login</span>
-                        </Link>
-                    </li>
+                
                 </ul>
 
                 {/* Mobile Menu Button */}

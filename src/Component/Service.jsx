@@ -191,11 +191,11 @@ const Service = () => {
             <div className="address-details">
               <p><strong>CIN:</strong> U74999HR2022PTC100527</p>
               <p><strong>Company:</strong> Chagans Technologies Limited</p>
-              <p>Unit#250-251, FIRST FLOOR</p>
-              <p>TOWER-B, ANSAL CORPORATE PLAZA</p>
-              <p>BLOCK -C2, PALAM VIHAR, GURUGRAM</p>
-              <p>HARYANA - 122017</p>
-            </div>
+              <p> Sco-4 , First Floor</p>
+              <p>Dayal Bagh Market, Sector-39 </p>
+              <p>Faridabad-121009, HR</p>
+             
+            </div> 
             <div className="map-visual">
               <div className="location-pin">
                 📍

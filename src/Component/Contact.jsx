@@ -57,126 +57,128 @@ const Contact = () => {
   ];
 
   return (
-    <div className="contact-premium">
+    <div className="ct-contact-wrapper">
       {/* Animated Background */}
-      <div className="animated-background-contact">
-        <div className="floating-shape shape-1"></div>
-        <div className="floating-shape shape-2"></div>
-        <div className="floating-shape shape-3"></div>
-        <div className="floating-particle part-1"></div>
-        <div className="floating-particle part-2"></div>
-        <div className="floating-particle part-3"></div>
-        <div className="floating-particle part-4"></div>
+      <div className="ct-bg-animated">
+        <div className="ct-shape ct-shape-1"></div>
+        <div className="ct-shape ct-shape-2"></div>
+        <div className="ct-shape ct-shape-3"></div>
+        <div className="ct-particle ct-particle-1"></div>
+        <div className="ct-particle ct-particle-2"></div>
+        <div className="ct-particle ct-particle-3"></div>
+        <div className="ct-particle ct-particle-4"></div>
       </div>
 
- 
-
       {/* Hero Section */}
-      <section className="contact-hero">
-        <div className="container">
-          <div className="hero-content-contact">
-            <h1 className="hero-title-contact">
-              <span className="title-line">Contact Us</span>
+      <section className="ct-hero-section">
+        <div className="ct-container">
+          <div className="ct-hero-content">
+            <h1 className="ct-hero-title">
+              <span className="ct-title-line">Contact Us</span>
             </h1>
-            <p className="hero-subtitle-contact">
+            <p className="ct-hero-subtitle">
               We're here to help and answer any question you might have. We look forward to hearing from you.
             </p>
-            <div className="hero-illustration">
-              <div className="illustration-circle circle-1"></div>
-              <div className="illustration-circle circle-2"></div>
-              <div className="illustration-circle circle-3"></div>
-              <div className="contact-icon">📞</div>
+            <div className="ct-hero-illustration">
+              <div className="ct-ill-circle ct-ill-circle-1"></div>
+              <div className="ct-ill-circle ct-ill-circle-2"></div>
+              <div className="ct-ill-circle ct-ill-circle-3"></div>
+              <div className="ct-ill-icon">📞</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Contact Section */}
-      <section className="contact-main-section" ref={sectionRef}>
-        <div className="container">
-          <div className="contact-grid">
+      <section className="ct-main-section" ref={sectionRef}>
+        <div className="ct-container">
+          <div className="ct-grid">
             {/* Contact Form */}
-            <div className="contact-form-container">
-              <div className="form-header">
+            <div className="ct-form-wrapper">
+              <div className="ct-form-header">
                 <h2>Send us a Message</h2>
                 <p>Fill out the form below and we'll get back to you within 24 hours</p>
               </div>
 
-              <form className="contact-form" onSubmit={handleSubmit}>
-                <div className="form-group">
-                  <div className="input-wrapper">
+              <form className="ct-form" onSubmit={handleSubmit}>
+                <div className="ct-form-group">
+                  <div className="ct-input-wrapper">
                     <input
                       type="text"
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="form-input"
+                      className="ct-input-field"
+                      placeholder=" "
                     />
-                    <label className="form-label">Name</label>
-                    <div className="input-highlight"></div>
+                    <label className="ct-input-label">Name</label>
+                    <div className="ct-input-highlight"></div>
                   </div>
                 </div>
 
-                <div className="form-group">
-                  <div className="input-wrapper">
+                <div className="ct-form-group">
+                  <div className="ct-input-wrapper">
                     <input
                       type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="form-input"
+                      className="ct-input-field"
+                      placeholder=" "
                     />
-                    <label className="form-label">Email</label>
-                    <div className="input-highlight"></div>
+                    <label className="ct-input-label">Email</label>
+                    <div className="ct-input-highlight"></div>
                   </div>
                 </div>
 
-                <div className="form-group">
-                  <div className="input-wrapper">
+                <div className="ct-form-group">
+                  <div className="ct-input-wrapper">
                     <input
                       type="tel"
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
                       required
-                      className="form-input"
+                      className="ct-input-field"
+                      placeholder=" "
                     />
-                    <label className="form-label">Phone</label>
-                    <div className="input-highlight"></div>
+                    <label className="ct-input-label">Phone</label>
+                    <div className="ct-input-highlight"></div>
                   </div>
                 </div>
 
-                <div className="form-group">
-                  <div className="input-wrapper textarea-wrapper">
+                <div className="ct-form-group">
+                  <div className="ct-input-wrapper ct-textarea-wrapper">
                     <textarea
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
                       required
                       rows="5"
-                      className="form-input textarea-input"
+                      className="ct-input-field ct-textarea-field"
+                      placeholder=" "
                     ></textarea>
-                    <label className="form-label">Message / Complaint</label>
-                    <div className="input-highlight"></div>
+                    <label className="ct-input-label">Message / Complaint</label>
+                    <div className="ct-input-highlight"></div>
                   </div>
                 </div>
 
                 <button 
                   type="submit" 
-                  className={`submit-btn ${isSubmitting ? 'submitting' : ''}`}
+                  className={`ct-submit-btn ${isSubmitting ? 'ct-submitting' : ''}`}
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
                     <>
-                      <div className="submit-spinner"></div>
+                      <div className="ct-spinner"></div>
                       Sending...
                     </>
                   ) : (
                     <>
                       Send Message
-                      <span className="btn-arrow">→</span>
+                      <span className="ct-btn-arrow">→</span>
                     </>
                   )}
                 </button>
@@ -184,16 +186,16 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="contact-info-container">
-              <div className="info-card">
-                <div className="card-glow"></div>
+            <div className="ct-info-wrapper">
+              <div className="ct-info-card">
+                <div className="ct-card-glow"></div>
                 
                 {/* Address Section */}
-                <div className="info-section">
-                  <div className="info-icon">📍</div>
-                  <div className="info-content">
+                <div className="ct-info-section">
+                  <div className="ct-info-icon">📍</div>
+                  <div className="ct-info-content">
                     <h3>Our Address</h3>
-                    <div className="address-details">
+                    <div className="ct-address-details">
                       <p><strong>CIN:</strong> U74999HR2022PTC100527</p>
                       <p>Chagans Technologies Ltd</p>
                       <p>SCO-4, Dayal Bagh Market,</p>
@@ -203,21 +205,21 @@ const Contact = () => {
                 </div>
 
                 {/* Phone Numbers */}
-                <div className="info-section">
-                  <div className="info-icon">📞</div>
-                  <div className="info-content">
+                <div className="ct-info-section">
+                  <div className="ct-info-icon">📞</div>
+                  <div className="ct-info-content">
                     <h3>Call Us</h3>
-                    <div className="phone-numbers">
-                      <a href="tel:01294020010" className="phone-link">
-                        <span className="phone-icon">📱</span>
+                    <div className="ct-phone-numbers">
+                      <a href="tel:01294020010" className="ct-phone-link">
+                        <span className="ct-phone-icon">📱</span>
                         01294020010
                       </a>
-                      <a href="tel:01244053323" className="phone-link">
-                        <span className="phone-icon">📱</span>
+                      <a href="tel:01244053323" className="ct-phone-link">
+                        <span className="ct-phone-icon">📱</span>
                         0124-4053323
                       </a>
-                      <a href="tel:01244996280" className="phone-link">
-                        <span className="phone-icon">📱</span>
+                      <a href="tel:01244996280" className="ct-phone-link">
+                        <span className="ct-phone-icon">📱</span>
                         0124-4996280
                       </a>
                     </div>
@@ -225,31 +227,31 @@ const Contact = () => {
                 </div>
 
                 {/* Email */}
-                <div className="info-section">
-                  <div className="info-icon">✉️</div>
-                  <div className="info-content">
+                <div className="ct-info-section">
+                  <div className="ct-info-icon">✉️</div>
+                  <div className="ct-info-content">
                     <h3>Email Us</h3>
-                    <a href="mailto:info@chagans.com" className="email-link">
+                    <a href="mailto:info@chagans.com" className="ct-email-link">
                       info@chagans.com
                     </a>
                   </div>
                 </div>
 
                 {/* Social Links */}
-                <div className="info-section">
-                  <div className="info-icon">🌐</div>
-                  <div className="info-content">
+                <div className="ct-info-section">
+                  <div className="ct-info-icon">🌐</div>
+                  <div className="ct-info-content">
                     <h3>Connect with us</h3>
-                    <div className="social-links">
+                    <div className="ct-social-links">
                       {socialLinks.map((social, index) => (
                         <a
                           key={social.name}
                           href="#"
-                          className="social-link"
-                          style={{ '--delay': index * 0.1 + 's' }}
+                          className="ct-social-link"
+                          style={{ '--ct-delay': index * 0.1 + 's' }}
                         >
-                          <span className="social-icon">{social.icon}</span>
-                          <span className="social-tooltip">{social.name}</span>
+                          <span className="ct-social-icon">{social.icon}</span>
+                          <span className="ct-social-tooltip">{social.name}</span>
                         </a>
                       ))}
                     </div>
@@ -262,26 +264,26 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="map-section">
-        <div className="container">
-          <div className="section-header">
+      <section className="ct-map-section">
+        <div className="ct-container">
+          <div className="ct-section-header">
             <h2>Find Us Here</h2>
             <p>Visit our office or get in touch with us</p>
           </div>
-          <div className="map-container">
-            <div className="interactive-map">
-              <div className="map-pin">
-                <div className="pin-main">📍</div>
-                <div className="pin-pulse"></div>
-                <div className="pin-pulse delay-1"></div>
-                <div className="pin-pulse delay-2"></div>
+          <div className="ct-map-container">
+            <div className="ct-interactive-map">
+              <div className="ct-map-pin">
+                <div className="ct-pin-main">📍</div>
+                <div className="ct-pin-pulse"></div>
+                <div className="ct-pin-pulse ct-pin-delay-1"></div>
+                <div className="ct-pin-pulse ct-pin-delay-2"></div>
               </div>
-              <div className="map-overlay">
-                <div className="location-info">
+              <div className="ct-map-overlay">
+                <div className="ct-location-info">
                   <h4>Chagans Technologies Ltd</h4>
                   <p>SCO-4, Dayal Bagh Market, Sector-39</p>
                   <p>Faridabad - 121009</p>
-                  <button className="directions-btn">
+                  <button className="ct-directions-btn">
                     Get Directions
                   </button>
                 </div>
@@ -292,31 +294,30 @@ const Contact = () => {
       </section>
 
       {/* Additional Corporate Info */}
-      <section className="corporate-info-section">
-        <div className="container">
-          <div className="corporate-grid">
-            <div className="corporate-card">
+      <section className="ct-corporate-section">
+        <div className="ct-container">
+          <div className="ct-corporate-grid">
+            <div className="ct-corporate-card">
               <h3>Corporate Address</h3>
-              <div className="corporate-details">
+              <div className="ct-corporate-details">
                 <p><strong>CIN:</strong> U74999HR2022PTC100527</p>
                 <p><strong>Company:</strong> Chagans Technologies Limited</p>
                 <p>Sco-4 , First Floor</p>
                 <p>Dayal Bagh Market, Sector-39</p>
                 <p>Faridabad-121009, HR</p>
-               
               </div>
             </div>
 
-            <div className="links-card">
+            <div className="ct-links-card">
               <h3>Useful Links</h3>
-              <div className="useful-links">
-                <a href="#" className="useful-link">About us</a>
-                <a href="#" className="useful-link">Contact Us</a>
-                <a href="#" className="useful-link">Login</a>
-                <a href="#" className="useful-link">Our Services</a>
-                <a href="#" className="useful-link">Terms & Conditions</a>
-                <a href="#" className="useful-link">Privacy policy</a>
-                <a href="#" className="useful-link">Refund Policy</a>
+              <div className="ct-useful-links">
+                <a href="#" className="ct-useful-link">About us</a>
+                <a href="#" className="ct-useful-link">Contact Us</a>
+                <a href="#" className="ct-useful-link">Login</a>
+                <a href="#" className="ct-useful-link">Our Services</a>
+                <a href="#" className="ct-useful-link">Terms & Conditions</a>
+                <a href="#" className="ct-useful-link">Privacy policy</a>
+                <a href="#" className="ct-useful-link">Refund Policy</a>
               </div>
             </div>
           </div>
@@ -324,9 +325,9 @@ const Contact = () => {
       </section>
 
       {/* Footer */}
-      <footer className="contact-footer">
-        <div className="container">
-          <div className="footer-content">
+      <footer className="ct-footer">
+        <div className="ct-container">
+          <div className="ct-footer-content">
             <p>© Copyright Chagans Technologies Ltd. All Rights Reserved</p>
             <p>Designed by Chagans Technologies Ltd</p>
           </div>
@@ -334,10 +335,10 @@ const Contact = () => {
       </footer>
 
       {/* Floating Contact Button */}
-      <div className="floating-contact">
-        <button className="floating-btn">
-          <span className="btn-icon">💬</span>
-          <span className="btn-text">Need Help?</span>
+      <div className="ct-floating-btn-wrapper">
+        <button className="ct-floating-btn">
+          <span className="ct-floating-icon">💬</span>
+          <span className="ct-floating-text">Need Help?</span>
         </button>
       </div>
     </div>
